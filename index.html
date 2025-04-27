@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.2.0/css/line.min.css">
+  
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("35L7r2e9Z4K-_NQhG");
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav id="header">
+      <div class="nav-logo">  
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list"><a href="#home" class="nav-link active-link">Home</a><div class="circle"></div></li>
+          <li class="nav_list"><a href="#about" class="nav-link">About</a><div class="circle"></div></li>
+          <li class="nav_list"><a href="#projects" class="nav-link">Projects</a><div class="circle"></div></li>
+          <li class="nav_list"><a href="#contacts" class="nav-link">Contacts</a><div class="circle"></div></li>
+        </ul>
+      </div>
+      <div class="mode">
+        <div class="moon-sun" id="toggle-switch">
+          <i class="fa fa-moon" id="moon"></i>
+          <i class="fa fa-sun" id="sun"></i>
+        </div>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <main class="wrapper">
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="hello"><p>Hello I'm</p></div>
+          <div class="featured-name"><span class="typedText"></span></div>
+          <div class="text-info"><p>My name is Vansh Pratap Singh Ranawat</p></div>
+          <div class="text-btn">
+            <button class="btn hire-btn">Hire Me</button>
+            <button class="btn">Download Resume<i class="uil uil-file"></i></button>
+          </div>
+          <div class="social_icons">
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/ranawatvansh/" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('linkedin.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+            </div>
+            <div class="icon">
+              <a href="https://github.com/mynamevansh" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('github.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+            </div>
+            <div class="icon">
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('gmail.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+            </div>
+            <div class="icon">
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('instagram.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+            </div>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="vansh.jpeg" alt="Vansh Ranawat">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="top-header"><h1>About me</h1></div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <figure class="about-me">
+                <figcaption>
+                  <img src="vansh.jpeg" alt="Vansh Ranawat" class="profile" />
+                  <h2>Web Developer</h2>
+                  <p>I'm a Computer Science student with hands-on experience in HTML, CSS, JavaScript, React js. I have a strong interest in problem-solving, software development, and exploring new technologies in web and software engineering. I'm passionate about building functional, user-friendly applications and continuously improving my skills. I'm open to internships and project opportunities where I can contribute and grow as a developer. Looking forward to collaborating and learning together!</p>
+                </figcaption>
+              </figure>
+              <button class="about-me-btn">Hire me</button>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-box">
+              <span class="title">HTML</span>
+              <div class="skill-bar">
+                <div class="skill-per html" data-percent="90">
+                  <span class="tooltip">90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-box">
+              <span class="title">CSS</span>
+              <div class="skill-bar css">
+                <div class="skill-per css" data-percent="90">
+                  <span class="tooltip">90%</span>
+                </div>
+              </div>
+            </div>
+
+            <!--<div class="skill-box">
+              <span class="title">Python</span>
+              <div class="skill-bar">
+                <div class="skill-per python" data-percent="70">
+                  <span class="tooltip">70%</span>
+                </div>
+              </div>
+            </div>-->
+
+            <div class="skill-box">
+              <span class="title">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-per javascript" data-percent="70">
+                  <span class="tooltip">70%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-box">
+              <span class="title">React</span>
+              <div class="skill-bar">
+                <div class="skill-per react" data-percent="60">
+                  <span class="tooltip">60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="top-header"><h1>Projects and Services</h1></div>
+        <div class="project-container">
+          <div class="project-box spotify">
+              <h1 style="font-family: georgia; font-size: 25px; font-weight: 400;">Spotify Clone</h1>
+              <p class="hover-text">A clone of the popular Spotify web app built using HTML, CSS, and JavaScript. It replicates the core UI, including the homepage layout, music controls, and smooth hover effects—highlighting front-end design and DOM manipulation skills.
+          
+              <a href="https://spotify-clone-mery.vercel.app/ ">https://spotify-clone-mery.vercel.app/ </a> 
+              </p>
+          </div>
+          <div class="project-box lostandfound">
+            <p class="hover-text">A simple Lost and Found web application built using HTML, CSS, and JavaScript. It allows users to report lost or found items with details like item name, description, and contact info. The project highlights clean UI design, form handling, and DOM manipulation.
+            
+            <a href="https://lost-and-found-green-seven.vercel.app/">https://lost-and-found-green-seven.vercel.app/</a>  
+            </p>
+            
+          </div>
+          <div class="project-box award">
+            
+            <h1 style="font-family: georgia; font-size: 20px; font-weight: 500;">Experience</h1>
+            <label> 4+ Months in Web Development</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="top-header">
+          <h1>Let's Work Together</h1>
+          <span>Do you have a project in mind? Contact me here.</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-envelope"></i> Email: vanshranawat48@gmail.com</p>
+              <p><i class="uil uil-phone"></i> Phone: 91+9509410180</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-control">
+              <!-- Add the form element with id="contact-form" -->
+              <form id="contact-form">
+                <div class="form-inputs">
+                  <input type="text" name="user_name" placeholder="Your Name" class="input-field" id="name" required>
+                  <input type="email" name="user_email" placeholder="Your Email" class="input-field" id="email" required>
+                </div>
+                <div class="text-area">
+                  <input type="text" name="subject" placeholder="Subject" class="input-subject" id="subject" required>
+                  <textarea name="message" placeholder="Message" id="message" required></textarea>
+                </div>
+                <div class="form-button">
+                  <button type="submit" class="btn" onclick="sendMail()">Send <i class="uil uil-message"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list"><a href="#home">Home</a></li>
+          <li class="footer_menu_list"><a href="#about">About</a></li>
+          <li class="footer_menu_list"><a href="#projects">Projects</a></li>
+          <li class="footer_menu_list"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/ranawatvansh/" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('linkedin.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/mynamevansh" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('github.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+        </div>
+        <div class="icon">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('gmail.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+        </div>
+        <div class="icon">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" style="display: block; width: 90%; height: 90%; background-image: url('instagram.png'); background-size: cover; background-position: center; border-radius: 50%;"></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none; color: inherit;">Vansh Ranawat</a> - All rights reserved 2025</p>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>
